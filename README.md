@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click Here](https://your-solution-url.com)
-- Live Site URL: [Click Here](https://your-live-site-url.com)
+- Solution URL: [Click Here](https://www.frontendmentor.io/solutions/article-component-modal-P7m7conZHC)
+- Live Site URL: [Click Here](https://article-component-psi.vercel.app/)
 
 ## My process
 
