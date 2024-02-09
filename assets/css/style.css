@@ -58,7 +58,7 @@ p{
 }
 
 .article-content h1, 
-.article-author h4{
+.article-author span{
     font-weight: 700;
     color: hsl(217, 19%, 35%);
 }
