@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/favicon-32x32.png" type="image/x-icon">
+    <!--FONTES PERSONALIZADAS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" 
+    rel="stylesheet">
+    <!---->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Article Component Master Share</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container-component">
+                <div class="article-img">
+                </div>
+                <div class="article-info">
+                    <div class="article-content">
+                        <h1>
+                            Shift the overall look and feel by adding these 
+                            wonderful touches to furniture in your home
+                        </h1>
+                        <p>
+                            Ever been in a room and felt like something was missing? Perhaps if felt slighty bare and
+                            uninviting. I've got some simple tips to help you make any room feel complete.
+                        </p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-author">
+                            <img src="assets/images/avatar-michelle.jpg" alt="Avatar Michelle">
+                            <div>
+                                <h4>Michelle Appleton</h4>
+                                <p>28 Jun 2020</p>
+                            </div>
+                        </div>
+                        <div id="modalDesktop" class="modalDesktop">
+                            <span>SHARE</span>
+                            <div class="empty">
+                                <a href=="#"><img src="assets/icons/icon-twitter.svg" alt="share in twitter"></a>
+                                <a href"#"><img src="assets/icons/icon-facebook.svg" alt="share in facebook"></a>
+                                <a href="#"><img src="assets/icons/icon-pinterest.svg" alt="share in pinterest"></a>
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+
+                        <div id="shareDesktop" class="share share-desktop" onclick="modalOpenOrClose()">
+                            <img src="assets/icons/icon-share.svg" alt="icon share">
+                        </div>
+
+                        <div id="modalMobile" class="modalMobile">
+                            <div class="container-links">
+                                <span>SHARE</span>
+                                <a href="#"><img src="assets/icons/icon-facebook.svg" alt="share in facebook"></a>
+                                <a href="#"><img src="assets/icons/icon-twitter.svg" alt="share in twitter"></a>
+                                <a href="#"><img src="assets/icons/icon-pinterest.svg" alt="share in pinterest"></a>
+                            </div>
+                            <div id="shareMobile" class="share share-mobile" onclick="modalOpenOrClose()">
+                                <img src="assets/icons/icon-share.svg" alt="icon share">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/modal.js"></script>
+</body>
+</html>

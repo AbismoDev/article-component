@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+
+section{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p{
+    font-size: 14px;
+}
+
+.container-component{
+    max-width: 900px;
+    height: 325px;
+    width: 100%;
+    display: flex;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.article-img{
+    width: 50%;
+    background-image: url('../images/drawers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.article-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.article-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+}
+
+.article-content h1, 
+.article-author h4{
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.article-content p{
+    margin-top: 20px;
+}
+
+.article-content p, 
+.article-author p{
+    color: hsl(214, 17%, 51%);
+}
+
+.article-footer{
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.article-author{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.article-author img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.modalDesktop{
+    width: 210px;
+    padding: 10px;
+    top: -35px;
+    right: 15px;
+    transform: translateX(41%); /*Makes the modal follow according to the responsive*/
+    position: absolute;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
+    display: none;
+}
+
+.modalDesktop a, 
+.modalMobile a{
+    display: flex;
+}
+
+.modalDesktop span, 
+.modalMobile span{
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: hsl(212, 23%, 69%);
+}
+
+.modalMobile{
+    width: 100%;
+    left: 0;
+    padding: 10px 20px;
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.open{
+    display: flex;
+}
+
+.empty{
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.empty img{    
+    transition: .3s;
+}
+
+.empty img:hover{
+    opacity: .7;
+}
+
+.arrow{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid hsl(217, 19%, 35%);
+    top: 28px;
+    left: calc(-25%);
+    transform: rotate(180deg);
+}
+
+.share-desktop{
+    background-color: hsl(212, 100%, 91%);
+}
+
+.share{
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+
+.share-active{
+    background-color: hsl(214, 17%, 51%);
+}
+
+.share-active img{
+    filter: brightness(0) invert(1);
+}
+
+.container-links{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 720px){   
+    .container-component{
+        max-width: 375px;
+        flex-wrap: wrap;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .article-img{
+        width: 100%;
+        height: 300px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+    }
+
+    .article-info{
+        width: 100%;
+        gap: 20px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
